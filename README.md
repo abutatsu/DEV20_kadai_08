@@ -1,3 +1,4 @@
+
 # 課題0８
 「アーセナル移籍情報登録(改良版)2」
 
@@ -5,10 +6,16 @@
  - サッカーチーム「アーセナル」へ移籍する可能性のある選手を登録する
 
 ## 工夫した点・こだわった点
- - ログイン機能追加
- - ログインするとnav部分と左カラムに名前と年齢を条件分岐で表示できるようにした
- - プロフィール画像の登録
- - プロフィールの修正機能
+ - 新規ユーザー登録機能追加  
+　└password_hash()関数を使用してパスワードの暗号化  
+　└password_verify()関数を使用して暗号化したパスワードの認証  
+　└パスワードのフォームを「input type="password"」に変更して入力した文字が見えないようにした  
+ ![localhost_kadai_08_entry_php_entry php](https://user-images.githubusercontent.com/83898546/125147603-56425180-e167-11eb-8e9e-c4a277a1ce4e.png)
+ - データベースを組み直し正規化
+ - プレーヤー情報を一つにまとめ`p_status`で`0=現メンバー``1=移籍候補`とした
+ - ER図挑戦！
+ ![drawSQL-export-2021-07-10_09_58](https://user-images.githubusercontent.com/83898546/125147787-89d1ab80-e168-11eb-9518-63757e627699.png)
+
  - 選手登録情報の更新・削除機能→ログインしないと操作できないようにした
  - 更新情報をテロップ風に表示
  - レイアウトをキレイに整えた
@@ -25,6 +32,8 @@
 同じコードは共通ファイルに書くなどページ更新作業時の効率の良い方法を考えたい。
 
 ## 課題のイメージ
-![localhost_kadai_07_login php](https://user-images.githubusercontent.com/83898546/124339932-9c8a3480-dbec-11eb-9305-1b7690cc48cf.png)
+![localhost_kadai_08_index php](https://user-images.githubusercontent.com/83898546/125147814-b5ed2c80-e168-11eb-9ba1-3a8183eec451.png)
+![localhost_kadai_08_transfer php](https://user-images.githubusercontent.com/83898546/125147817-b8e81d00-e168-11eb-8767-44411c86fd11.png)
+
 
 
