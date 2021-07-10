@@ -14,7 +14,7 @@
 2. データベースを組み直し正規化
  - プレーヤー情報を一つにまとめ`p_status`で`0=現メンバー``1=移籍候補`とした
   └SELECT WHEREで表示を分ける。 
- - ER図挑戦！
+ - ER図挑戦！[drawsql](https://drawsql.app/home)にて作成
  ![drawSQL-export-2021-07-10_09_58](https://user-images.githubusercontent.com/83898546/125147787-89d1ab80-e168-11eb-9518-63757e627699.png)
 
 3. 在籍メンバーをポジションごとにタブ切り替えする仕様に変更
